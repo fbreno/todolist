@@ -18,9 +18,10 @@ Com npm:
 
 ```bash
 npm run serve
+```
 
 # Crazy 8:
-![crazy 8](https://github.com/fbreno/todolist/assets/14239390/f57433de-9a6d-4ed0-8e2f-9f7e8c38c9d6)
+![Crazy 8](https://github.com/fbreno/todolist/assets/14239390/309790aa-f21a-4e37-84a4-28ccbfe3faf4)
 
 
 # Backlog:
