@@ -16,11 +16,16 @@
                 ref="editButton"
                 @click="toggleToItemEditForm">
                 Editar
-                <span class="visualmente-oculto">{{ label }}</span>
             </button>
             <button type="button" class="btn btn__danger" @click="deleteToDo">
                 Excluir
-                <span class="visualmente-oculto">{{ label }}</span>
+            </button>
+            <!-- Botões de mudar prioridade -->
+            <button type="button" class="btn btn__primary" @click="increasePriority" title="Aumenta a prioridade da tarefa">
+                +
+            </button>
+            <button type="button" class="btn btn__primary" @click="decreasePriority" title="Diminue a prioridade da tarefa">
+                -
             </button>
         </div>
     </div>
@@ -76,6 +81,12 @@ export default {
                 const editButtonRef = this.$refs.editButton;
                 editButtonRef.focus();
             });
+        },
+        increasePriority() {
+            this.$emit("aumentar-prioridade");
+        },
+        decreasePriority() {
+            this.$emit("diminuir-prioridade");
         },
     },
 };

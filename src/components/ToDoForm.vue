@@ -7,7 +7,7 @@
         Pica
         <h2 class="label-wrapper">
             <label for="new-todo-input" class="label__lg" style="color: black">
-                Minha lista de tarefas
+                Tarefas
             </label>
         </h2>
         <input
